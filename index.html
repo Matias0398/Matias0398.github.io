@@ -1,41 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>control checkbox</title>
+    <title>Conversor de divisisas</title>
     <meta charset="UTF-8">
 </head>
 <body>
-    <script>
-        function contarSeleccionados() {
-            if (document.getElementById('checkbox1').checked) {
-                var opc="fútbol";
-            }else{
-                opc=" "
-            }
-            if (document.getElementById('checkbox2').checked) {
-                var opc1="básket";
-            }else{
-                opc1=" "
-            }
-            if (document.getElementById('checkbox3').checked) {
-                var opc2="tenis";
-            }else{
-                opc2=" "
-            }
-            alert("Practica "+opc+" "+ opc1+" "+opc2);
-        }
-    </script>
-    <form>
-        <label>¿Qué deportes practica?</label>
-        <br>
-        <input type="checkbox" id="checkbox1">Fútbol
-        <br>
-        <input type="checkbox" id="checkbox2">Básket
-        <br>
-        <input type="checkbox" id="checkbox3">Tenis
-        <br>
-        <br>
-        <input type="button" value="Mostrar" onClick="contarSeleccionados()">
-    </form>
+   <title>Bienvenido</title>
+   <form>
+       <select>
+           <label>Ingrese el monto a convertir</label>
+           <br>
+           <input type="text">
+           <br>
+           <label>Seleccione su moneda oficial</label>
+           <br>
+           <option>Tipo de moneda</option>
+           <br>
+           <label>seleccione a la moneda que desea convertir</label>
+           <br>
+           <option>moneda de cambio</option>
+           <br>
+           <button value="Convertir"></button><br>
+           <div style="display: block;"></div><br>
+           <input type="text" value="moneda de cambio"><br>
+       </select>
+   </form>
 </body>
 </html>
