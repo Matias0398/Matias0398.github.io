@@ -1,0 +1,22 @@
+h1{font-size: 40px;
+text-align: center;
+margin-top: 100px;
+font-family: Arial;}
+form{text-align: center;
+    margin-top: 60px;
+}
+label,p{
+    font-size: 25px;
+}
+input{margin-top: 30px;
+    font-size: 20px;
+    border-radius: 30px;
+}
+select{margin-top: -10px;
+    font-size: 18px;
+}
+.boton{
+   border-radius: 0px;
+}
+.mostrar{margin-top: 30px;
+}
