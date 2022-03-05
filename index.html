@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Conversor de divisisas</title>
+    <title>Conversor de divisas</title>
     <meta charset="UTF-8">
+    <script src="funcion.js"></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <h1>Bienvenido al conversor de divisas</h1>
    <form>
     <label>Ingrese el monto a convertir</label>
     <br>
-    <input type="text">
+    <input type="text" id="cantidad">
     <br>
-       <select>
-           <option>seleccione su moneda</option>
+    <p>Convertir de:</p>
+      <select id="mimoneda" onchange="convertir()">         
            <br>
-           <option>moneda de cambio</option>
+           <option value="1">Peso argentino</option>
+           <option value="2">Dolar Estadounidense</option>
+           <option value="3">Euro</option>
+           <option value="4">Franco suizo</option>
+           <option value="5">Libra esterlina</option>    
+           <option value="6">Yen</option>
            <br>           
        </select>
-       <button value="Convertir"></button><br>
-           <div style="display: block;"></div><br>
+       <p> a:</p>
+       <select id="cambio" onchange="convertir()">
+        <br>
+        <option value="1">Peso argentino</option>
+        <option value="2">Dolar Estadounidense</option>
+        <option value="3">Euro</option>
+        <option value="4">Franco suizo</option>
+        <option value="5">Libra esterlina</option>    
+        <option value="6">Yen</option>
+        <br>           
+    </select>
+    <br>
+    <input class="boton" type="button" value="convertir" onClick="mostrar()">
+            <br>
+            <div class="mostrar" id="visual" style="display: none;">
            <label>El cambio queda en:</label><br>
-           <input type="text" value="moneda de cambio"><br>
+           <input type="text" id="conversion" ><br>
+           </div>
    </form>
 </body>
 </html>
